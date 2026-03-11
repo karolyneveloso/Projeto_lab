@@ -13,6 +13,10 @@ spring:
     locations: classpath:db/migration
     baseline-on-migrate: true
 
+  devtools:
+    livereload:
+      enabled: true
+
 api:
   security:
     token:
