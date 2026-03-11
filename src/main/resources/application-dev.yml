@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/projetolab
+    username: postgres
+    password: 123456
+
+  jpa:
+    show-sql: true
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+api:
+  security:
+    token:
+      secret: minha-chave-dev-123456
